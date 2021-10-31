@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "gitbook-plugin-mathjax-pro": "^0.0.6",
+    "mathjax": "^2.7.7"
+  }
+}
