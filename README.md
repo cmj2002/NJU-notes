@@ -6,3 +6,12 @@
 
 欢迎访问[我的博客](https://blog.caomingjun.com) 
 
+> 数学公式测试：
+>
+> $x+y=z$
+> $$
+> x+y=z\\
+> x-y=q
+> $$
+> 
+
