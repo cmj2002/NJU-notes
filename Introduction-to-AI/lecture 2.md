@@ -64,7 +64,7 @@ node对应了一个state
 * 如果节点包含一个goal state就返回一个解
 * 否则拓展该节点并添加到搜索节点
 
-<img src="C:\Users\10643\AppData\Roaming\Typora\typora-user-images\image-20210906204451553.png" align="left" alt="image-20210906204451553" style="zoom:70%;" />
+<img src="C:\Users\10643\AppData\Roaming\Typora\typora-user-images\image-20210906204451553.png"   alt="image-20210906204451553" style="zoom:70%;" />
 
 注意：goal test的位置必须是在把 `node` 取出 `fringe` 后进行，而不能在加入 `fringe` 前（ `expand` 过程中或刚结束时）进行
 
@@ -72,7 +72,7 @@ node对应了一个state
 
 如果树中出现可能重复节点（比如路径规划绕圈了），称为图搜索：
 
-<img src="C:\Users\10643\AppData\Roaming\Typora\typora-user-images\image-20210906211644147.png" alt="image-20210906211644147" align="left" style="zoom:70%;" />
+<img src="C:\Users\10643\AppData\Roaming\Typora\typora-user-images\image-20210906211644147.png" alt="image-20210906211644147"   style="zoom:70%;" />
 
 注意检查的是状态而不是节点，一个节点可以有多个状态
 
@@ -113,13 +113,13 @@ node对应了一个state
 
 ### 深度有限的深度优先(Depth-limited search)
 
-<img src="lecture 2.assets/image-20210913215528815.png" align="left" alt="image-20210913215528815" style="zoom:75%;" />
+<img src="lecture 2.assets/image-20210913215528815.png"   alt="image-20210913215528815" style="zoom:75%;" />
 
 就是多了一行 `else if`
 
 ### 可变限深度优先（Ierative Deepening Search)
 
-<img src="lecture 2.assets/image-20210913221111334.png" alt="image-20210913221111334" align="left" style="zoom:80%;" />
+<img src="lecture 2.assets/image-20210913221111334.png" alt="image-20210913221111334"   style="zoom:80%;" />
 
 多次搜索了起始时（上面几层）的节点，似乎很浪费
 
@@ -127,9 +127,9 @@ node对应了一个state
 
 性能分析：
 
-<img src="lecture 2.assets/image-20210913221647479.png" align="left" alt="image-20210913221647479" style="zoom:50%;" />
+<img src="lecture 2.assets/image-20210913221647479.png"   alt="image-20210913221647479" style="zoom:50%;" />
 
 ## 总结
 
-<img src="lecture 2.assets/image-20210913221847333.png" align="left" alt="image-20210913221847333" style="zoom:100%;" />
+<img src="lecture 2.assets/image-20210913221847333.png"   alt="image-20210913221847333" style="zoom:100%;" />
 

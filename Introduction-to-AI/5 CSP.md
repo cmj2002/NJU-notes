@@ -25,7 +25,7 @@ $C$ 是描述变量取值的约束集合。
 
 例如, 如果 $X_{1} 、 X_{2}$ 的值域均为 $\{\mathrm{A}, \mathrm{B}\}$, 约束是二者不能取相同值, 关系可如下描述: $<\left(X_{1}, X_{2}\right),[(\mathrm{A}, \mathrm{B}),(\mathrm{B}, \mathrm{A})]>$ 或 $<\left(X_{1}, X_{2}\right), X_{1} \neq X_{2}>$
 
-<img src="5 CSP.assets/image-20211025161700617.png" align="left" alt="image-20211025161700617" style="zoom:50%;" />
+<img src="5 CSP.assets/image-20211025161700617.png"   alt="image-20211025161700617" style="zoom:50%;" />
 
 ### 与标准搜索的异同
 
