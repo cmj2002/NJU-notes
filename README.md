@@ -1,4 +1,4 @@
-# GitNotes | Cmj‘s Notes
+# GitNotes | Cmj's Notes
 
 这是我在南京大学学习期间的部分笔记
 
