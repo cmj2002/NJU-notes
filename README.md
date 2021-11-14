@@ -5,3 +5,6 @@
 较早的图片显示异常，这是因为图片在本地没有上传，但是改起来比较麻烦，干脆不改了。新的图片都是正常的
 
 欢迎访问[我的博客](https://blog.caomingjun.com) 
+
+感谢 [orangex4](https://orangex4.cool/) 提供的框架 [GitNotes](https://github.com/OrangeX4/GitNotes)
+
