@@ -36,7 +36,7 @@
 
 <img src="7 基于知识的Agent.assets/image-20211108103833052.png" alt="image-20211108103833052" style="zoom:67%;" />
 
-## 基于
+## 基于一阶逻辑的Agent
 
 ### 命题逻辑的缺陷
 
