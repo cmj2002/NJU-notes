@@ -48,3 +48,18 @@
 
 依次为命题逻辑、一阶逻辑、时序逻辑、概率论、模糊逻辑
 
+### 前件推理
+
+![image-20211122102618200](7 基于知识的Agent.assets/image-20211122102618200.png)
+
+### Forward chaining algorithm
+
+![image-20211122102457365](7 基于知识的Agent.assets/image-20211122102457365.png)
+
+![image-20211122102536954](7 基于知识的Agent.assets/image-20211122102536954.png)
+
+### Backward chaining algorithm
+
+![image-20211122102210195](7 基于知识的Agent.assets/image-20211122102210195.png)
+
+![image-20211122102411065](7 基于知识的Agent.assets/image-20211122102411065.png)
