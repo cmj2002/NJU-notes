@@ -1,6 +1,6 @@
 # 有先验的搜索
 
-<img src="lecture 3.assets/image-20210913224645991.png" alt="image-20210913224645991"   style="zoom:80%;" />
+<img src="images/image-20210913224645991.png" alt="image-20210913224645991"   style="zoom:80%;" />
 
 启发函数heuristic function估算当前离目标还有多远
 
@@ -47,13 +47,13 @@ A*算法使用admissible heuristic（可采纳启发式）
 
 证明（$h^*$为实际cost，$h$ 为估计的cost）
 
-<img src="lecture 3.assets/image-20210929171501283.png"   alt="image-20210929171501283" style="zoom:50%;" />
+<img src="images/image-20210929171501283.png"   alt="image-20210929171501283" style="zoom:50%;" />
 
-<img src="lecture 3.assets/image-20210929172222532.png"   alt="image-20210929172222532" style="zoom:80%;" />
+<img src="images/image-20210929172222532.png"   alt="image-20210929172222532" style="zoom:80%;" />
 
 ### 例题
 
-<img src="lecture 3.assets/image-20210929172634031.png"   alt="image-20210929172634031" style="zoom:80%;" />
+<img src="images/image-20210929172634031.png"   alt="image-20210929172634031" style="zoom:80%;" />
 
-<img src="lecture 3.assets/image-20210929174851141.png"   alt="image-20210929174851141" style="zoom:80%;" />
+<img src="images/image-20210929174851141.png"   alt="image-20210929174851141" style="zoom:80%;" />
 

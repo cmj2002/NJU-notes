@@ -6,7 +6,7 @@
 
 例如时间依赖关系：
 
-![image-20211127111858487](12 DFS的一些应用.assets/image-20211127111858487.png)
+![image-20211127111858487](images/image-20211127111858487.png)
 
 ### 拓扑排序(topological sort)
 
@@ -19,7 +19,7 @@ $E(G)$ 是 $V(G)$ 的一个**偏序**关系，而一个拓扑排序是满足 $E(
 
 #### 生成拓扑排序
 
-![image-20211127113240145](12 DFS的一些应用.assets/image-20211127113240145.png)
+![image-20211127113240145](images/image-20211127113240145.png)
 
 算法：
 
@@ -29,7 +29,7 @@ $E(G)$ 是 $V(G)$ 的一个**偏序**关系，而一个拓扑排序是满足 $E(
 
 时间复杂度 $O(m+n)$
 
-![image-20211127114948342](12 DFS的一些应用.assets/image-20211127114948342.png)
+![image-20211127114948342](images/image-20211127114948342.png)
 
 #### 另一种生成拓扑排序的方法
 
@@ -52,15 +52,15 @@ $E(G)$ 是 $V(G)$ 的一个**偏序**关系，而一个拓扑排序是满足 $E(
 
 ## 强连通分量
 
-![image-20211130172442238](12 DFS的一些应用.assets/image-20211130172442238.png)
+![image-20211130172442238](images/image-20211130172442238.png)
 
-![image-20211130172532295](12 DFS的一些应用.assets/image-20211130172532295.png)
+![image-20211130172532295](images/image-20211130172532295.png)
 
-![image-20211130172545115](12 DFS的一些应用.assets/image-20211130172545115.png)
+![image-20211130172545115](images/image-20211130172545115.png)
 
 时间复杂度：$O(m+n)$，包括一次生成 $G^T$ 和两次DFS
 
-![image-20211130173100261](12 DFS的一些应用.assets/image-20211130173100261.png)
+![image-20211130173100261](images/image-20211130173100261.png)
 
 证明见《算法导论》第三版中文版P358
 
@@ -74,27 +74,27 @@ $O(m+n)$
 
 基本原理：
 
-<img src="12 DFS的一些应用.assets/image-20211130173753219.png" alt="image-20211130173753219" style="zoom:50%;" />
+<img src="images/image-20211130173753219.png" alt="image-20211130173753219" style="zoom:50%;" />
 
-<img src="12 DFS的一些应用.assets/image-20211130173838699.png" alt="image-20211130173838699" style="zoom:50%;" />
+<img src="images/image-20211130173838699.png" alt="image-20211130173838699" style="zoom:50%;" />
 
-<img src="12 DFS的一些应用.assets/image-20211130173907512.png" alt="image-20211130173907512" style="zoom:50%;" />
+<img src="images/image-20211130173907512.png" alt="image-20211130173907512" style="zoom:50%;" />
 
-![image-20211130173923693](12 DFS的一些应用.assets/image-20211130173923693.png)
+![image-20211130173923693](images/image-20211130173923693.png)
 
-![image-20211130173939626](12 DFS的一些应用.assets/image-20211130173939626.png)
+![image-20211130173939626](images/image-20211130173939626.png)
 
 #### 找出 $r_i$
 
-![image-20211130174033469](12 DFS的一些应用.assets/image-20211130174033469.png)
+![image-20211130174033469](images/image-20211130174033469.png)
 
-![image-20211130174114659](12 DFS的一些应用.assets/image-20211130174114659.png)
+![image-20211130174114659](images/image-20211130174114659.png)
 
-![image-20211130174127447](12 DFS的一些应用.assets/image-20211130174127447.png)
+![image-20211130174127447](images/image-20211130174127447.png)
 
 #### 伪代码
 
-![image-20211130175053658](12 DFS的一些应用.assets/image-20211130175053658.png)
+![image-20211130175053658](images/image-20211130175053658.png)
 
 ```pseudocode
 Tarjan(G):

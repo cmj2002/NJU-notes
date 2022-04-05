@@ -25,7 +25,7 @@ $C$ 是描述变量取值的约束集合。
 
 例如, 如果 $X_{1} 、 X_{2}$ 的值域均为 $\{\mathrm{A}, \mathrm{B}\}$, 约束是二者不能取相同值, 关系可如下描述: $<\left(X_{1}, X_{2}\right),[(\mathrm{A}, \mathrm{B}),(\mathrm{B}, \mathrm{A})]>$ 或 $<\left(X_{1}, X_{2}\right), X_{1} \neq X_{2}>$
 
-<img src="5 CSP.assets/image-20211025161700617.png"   alt="image-20211025161700617" style="zoom:50%;" />
+<img src="images/image-20211025161700617.png"   alt="image-20211025161700617" style="zoom:50%;" />
 
 ### 与标准搜索的异同
 
@@ -53,9 +53,9 @@ Goal test：当前赋值已完成
 
 //Todo:伪代码
 
-<img src="5 CSP.assets/image-20211025161751256.png" alt="image-20211025161751256" style="zoom:67%;" />
+<img src="images/image-20211025161751256.png" alt="image-20211025161751256" style="zoom:67%;" />
 
-<img src="5 CSP.assets/image-20211025161806354.png" alt="image-20211025161806354" style="zoom:67%;" />
+<img src="images/image-20211025161806354.png" alt="image-20211025161806354" style="zoom:67%;" />
 
 ## Backtracing的提升：
 
@@ -70,7 +70,7 @@ minimum remaining values
 
 **用于选择将变量赋为哪个值**
 
-<img src="5 CSP.assets/image-20211025103937124.png" alt="image-20211025103937124" style="zoom:80%;" />
+<img src="images/image-20211025103937124.png" alt="image-20211025103937124" style="zoom:80%;" />
 
 ### Degree heuristic（度启发式）
 
@@ -78,7 +78,7 @@ minimum remaining values
 
 **选择对其他未赋值变量约束最多的变量**
 
-<img src="5 CSP.assets/image-20211025103912141.png" alt="image-20211025103912141" style="zoom:80%;" />
+<img src="images/image-20211025103912141.png" alt="image-20211025103912141" style="zoom:80%;" />
 
 ### Least constraining value（最少约束值）
 
@@ -86,23 +86,23 @@ minimum remaining values
 
 **给邻居变量留下更多选择**
 
-<img src="5 CSP.assets/image-20211025104003320.png" alt="image-20211025104003320" style="zoom:80%;" />
+<img src="images/image-20211025104003320.png" alt="image-20211025104003320" style="zoom:80%;" />
 
 ### 前向检验
 
-<img src="5 CSP.assets/image-20211025105004484.png" alt="image-20211025105004484" style="zoom:80%;" />
+<img src="images/image-20211025105004484.png" alt="image-20211025105004484" style="zoom:80%;" />
 
 ### Arc consistency（弧相容）
 
-<img src="5 CSP.assets/image-20211025105419180.png" alt="image-20211025105419180" style="zoom:80%;" />
+<img src="images/image-20211025105419180.png" alt="image-20211025105419180" style="zoom:80%;" />
 
-<img src="5 CSP.assets/image-20211025162854758.png" alt="image-20211025162854758" style="zoom:67%;" />
+<img src="images/image-20211025162854758.png" alt="image-20211025162854758" style="zoom:67%;" />
 
 应用 AC-3 之后，要么所有变量弧相容，否则有变量的值域为空（无解）
 
 时间复杂度 $O(n^2d^3)$，可以减少到 $O(n^2d^2)$
 
-<img src="5 CSP.assets/image-20211025105659146.png" alt="image-20211025105659146" style="zoom:80%;" />
+<img src="images/image-20211025105659146.png" alt="image-20211025105659146" style="zoom:80%;" />
 
 因为树搜索是指数的，所以用一个幂级的算法是划算的
 
@@ -110,21 +110,21 @@ minimum remaining values
 
 约束图没有环
 
-<img src="5 CSP.assets/image-20211025110222193.png" alt="image-20211025110222193" style="zoom:60%;" />
+<img src="images/image-20211025110222193.png" alt="image-20211025110222193" style="zoom:60%;" />
 
-![image-20211025110248953](5 CSP.assets/image-20211025110248953.png)
+![image-20211025110248953](images/image-20211025110248953.png)
 
 #### 可以通过删除节点或合并节点化简为树结构
 
-<img src="5 CSP.assets/image-20211025110454516.png" alt="image-20211025110454516" style="zoom:80%;" />
+<img src="images/image-20211025110454516.png" alt="image-20211025110454516" style="zoom:80%;" />
 
-<img src="5 CSP.assets/image-20211025110614797.png" alt="image-20211025110614797" style="zoom:80%;" />
+<img src="images/image-20211025110614797.png" alt="image-20211025110614797" style="zoom:80%;" />
 
 ## 多维关系转换为二维关系
 
 引入隐变量
 
-<img src="5 CSP.assets/image-20211025162652688.png" alt="image-20211025162652688" style="zoom:50%;" />
+<img src="images/image-20211025162652688.png" alt="image-20211025162652688" style="zoom:50%;" />
 
 ## 迭代算法
 
@@ -137,7 +137,7 @@ minimum remaining values
 * 选择赋值的变量：随机选择存在冲突的变量
 * 选择赋的值：选择与约束冲突最小的值
 
-<img src="5 CSP.assets/image-20211025163804516.png" alt="image-20211025163804516" style="zoom:67%;" />
+<img src="images/image-20211025163804516.png" alt="image-20211025163804516" style="zoom:67%;" />
 
-<img src="5 CSP.assets/image-20211025163828021.png" alt="image-20211025163828021" style="zoom:67%;" />
+<img src="images/image-20211025163828021.png" alt="image-20211025163828021" style="zoom:67%;" />
 

@@ -8,7 +8,7 @@
 
 > 使用斐波那契堆作为最小堆，可以将Dijkstra的SSSP复杂度降低到 $O(m+n\log n)$，APSP复杂度降低到 $O(mn+n^2\log n)$
 
-![image-20211216112430687](16 All-Pairs Shortest Paths.assets/image-20211216112430687.png)
+![image-20211216112430687](images/image-20211216112430687.png)
 
 ## JohnsonAPSP
 
@@ -16,7 +16,7 @@
 
 > 需要基于斐波那契堆的Dijkstra
 
-![image-20211216113845732](16 All-Pairs Shortest Paths.assets/image-20211216113845732.png)
+![image-20211216113845732](images/image-20211216113845732.png)
 
 ```pseudocode
 JohnsonAPSP(G):
@@ -32,11 +32,11 @@ for (each node u in G.V)
 
 ### 正确性
 
-![image-20211216115323955](16 All-Pairs Shortest Paths.assets/image-20211216115323955.png)
+![image-20211216115323955](images/image-20211216115323955.png)
 
-![image-20211216115354805](16 All-Pairs Shortest Paths.assets/image-20211216115354805.png)
+![image-20211216115354805](images/image-20211216115354805.png)
 
-![image-20211216115421976](16 All-Pairs Shortest Paths.assets/image-20211216115421976.png)
+![image-20211216115421976](images/image-20211216115421976.png)
 
 ## 递归算法
 
@@ -119,14 +119,14 @@ for (i=1 to Ceil(lg(n)))
 
 记 $\pi(u,v,r)$ 为这样的一条最短路径
 
-![image-20211216143013873](16 All-Pairs Shortest Paths.assets/image-20211216143013873.png)
+![image-20211216143013873](images/image-20211216143013873.png)
 
 易知 $\pi(u,v,r)$ 要么经过 $x_r$，要么不经过它
 
 * 后一种情况（不经过）：$\pi(u,v,r)=\pi(u,v,r-1)$
 * 前一种情况（经过）：$\pi(u,v,r)=\pi(u,x_r,r)+\pi(x_r,v,r)=\pi(u,x_r,r-1)+\pi(x_r,v,r-1)$
 
-![image-20211216143426714](16 All-Pairs Shortest Paths.assets/image-20211216143426714.png)
+![image-20211216143426714](images/image-20211216143426714.png)
 $$
 \operatorname{dist}(u, v, l)=\left\{\begin{array}{cc}
 w(u,v) & \text { if } r=0 \text { and } u=v \\

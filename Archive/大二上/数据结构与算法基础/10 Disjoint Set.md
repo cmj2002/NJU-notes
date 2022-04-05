@@ -20,11 +20,11 @@ $\mathcal{S}=\{S_1,S_2,\cdots,S_k\}$
 
 应用：
 
-<img src="10 Disjoint Set.assets/image-20211116163627294.png" alt="image-20211116163627294" style="zoom:70%;" />
+<img src="images/image-20211116163627294.png" alt="image-20211116163627294" style="zoom:70%;" />
 
 ## 用链表实现
 
-![image-20211116163705895](10 Disjoint Set.assets/image-20211116163705895.png)
+![image-20211116163705895](images/image-20211116163705895.png)
 
 ### 时间复杂度
 
@@ -47,11 +47,11 @@ $\mathcal{S}=\{S_1,S_2,\cdots,S_k\}$
 
     $\Theta(n^2)\to \Theta(n)$
 
-![image-20211116164356338](10 Disjoint Set.assets/image-20211116164356338.png)
+![image-20211116164356338](images/image-20211116164356338.png)
 
 改进之后，对于任意`MakeSet`，`Find`，`Union` 组成的序列：
 
-![image-20211116165819004](10 Disjoint Set.assets/image-20211116165819004.png)
+![image-20211116165819004](images/image-20211116165819004.png)
 
 ## 用有根树实现
 
@@ -59,7 +59,7 @@ $\mathcal{S}=\{S_1,S_2,\cdots,S_k\}$
 
 每一个节点有一个指向它父亲的指针，根节点的父亲是它自己
 
-![image-20211116170129279](10 Disjoint Set.assets/image-20211116170129279.png)
+![image-20211116170129279](images/image-20211116170129279.png)
 
 ### 时间复杂度
 
@@ -160,7 +160,7 @@ $\mathcal{S}=\{S_1,S_2,\cdots,S_k\}$
     * 这是因为打碎操作之后需要模拟后面的 `PartialFind` 开销
     * 显然，这样“分割”操作之后操作的效果不同了（分割操作后的森林结构与分割前不同），但是我们只关心时间复杂度，而时间复杂度并没有改变。
 
-![image-20211118105817100](10 Disjoint Set.assets/image-20211118105817100.png)
+![image-20211118105817100](images/image-20211118105817100.png)
 
 此时可以将 $C$ 转换为：
 
